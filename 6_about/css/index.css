@@ -1,0 +1,149 @@
+@import url("reset.css");
+
+.aboutus_top_bg{
+    display: flex;
+    height: 600px;
+    background-image: url("../img/about.jpg");
+    background-size: cover;
+    background-position: 0 center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------- breadcrumb -----------*/
+.wrap{
+    padding: 10px 0;
+    background-color: #e5e5e5;
+}
+
+.breadcrumb{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    font-size: 18px;
+}
+
+.breadcrumb li{
+    padding: 0 20px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px
+}
+
+.breadcrumb li + li{
+    padding-left: 0;
+}
+
+.breadcrumb li + li:before{
+    content: '/';
+    color: #000;
+    margin-right: 20px;
+}
+/*--------- main -----------*/
+.aboutus_main{
+    width: 1200px;
+    margin: 50px auto 100px;
+}
+
+.aboutus_main p{
+    margin-top: 30px;
+}
+
+.aboutus_main h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.aboutus_content{
+    display: flex;
+    margin: 100px 0 100px;
+}
+
+.aboutus_content_1{
+    flex:1
+}
+
+.aboutus_content_1 img{
+    width: 95%;
+    margin: 0 auto;
+    padding-right: 30px;
+
+}
+
+.aboutus_content_1 p{
+    margin: 30px auto 0;
+    width: 90%;
+}
+
+.aboutus_content_2{
+    flex:1
+}
+
+.aboutus_content_2 img{
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.aboutus_content_2 p{
+    margin: 30px auto 0;
+    width: 90%;
+
+}
+
+@media screen and (max-width: 414px) {
+    .aboutus_top_bg{
+        height: 20vh;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+    
+    .aboutus_main{
+        max-width: 413px;
+    }
+
+    .aboutus_main h2{
+        font-size: 20px;
+    }
+
+    .aboutus_main p{
+        font-size: 14px;
+        padding: 0 56px;
+    }
+
+    .aboutus_img{
+        width: 100%;
+    }
+
+    .aboutus_content{
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    
+
+    .aboutus_content_1 img{
+        width: 100%;
+    }
+
+    .aboutus_content_2{
+        margin-left: 20px;
+    }
+
+    .aboutus_content_2 img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .aboutus_content p{
+        font-size: 12px;
+        padding: 0;
+    }
+
+}

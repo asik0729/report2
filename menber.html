@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./5_member/css/reset.css">
+    <link rel="stylesheet" href="./5_member/css/header.css">
+    <link rel="stylesheet" href="./5_member/css/index.css">
+    <link rel="stylesheet" href="./5_member/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <title>Haru Coffee</title>
+</head>
+<body>
+    <!---------top bar ----------->       
+    <nav class="header">
+        <div class="header-wrapper">
+            <a class="logo-a" href="index.html">
+                <img class="logo" src="./5_member/img/header_logo.png" alt="">
+            </a>
+            <div class="hamBar_wrapper"><a class="hamBar" href="#"><i class="fa-solid fa-bars"></i></a></div>
+            <section class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="index.html">首頁</a></li>
+                    <li class="nav-item"><a href="visit.html">門市查詢</a></li>
+                    <li class="nav-item"><a href="news.html">最新消息</a></li>
+                    <li class="nav-item"><a href="products.html">商品介紹</a></li>
+                    <li class="nav-item"><a href="menber.html">會員專區</a></li>
+                    <li class="nav-item"><a href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+                </ul>         
+            </section>
+        </div>
+        <div class="sideInner" id="sideInner" style="display: none;"></div>
+    </nav>
+    
+    <div class="aboutus_top_bg"></div>
+  
+    <!---------------- 麵包屑 -------------->
+
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li href="#"><a>HOME</a></li>
+            <li href="#"><a>會員專區</a></li>    
+        </ol>
+    </div>
+    <!-------------- 主要內容 -------------->
+    <div class="member_login_main">
+        <h2>Welcome</h2>
+        <div class="account">帳號<input type="text"></div>
+        <div class="password">密碼<input type="password"></div>
+        <div class="content_wrapper">
+            <a href="../HTML/member_joinus.html">加入會員</a>
+            <a href="../HTML/member_forgotpassword.html">忘記密碼?</a>
+        </div>
+        <div class="login"><input type="button" value="登入" onclick="location.href=''"></div>
+
+    </div>
+    <!-------------- footer --------------> 
+    <footer>
+        <div class="footer_content"> 
+            <div class="footer_logo">
+                <img src="./5_member/img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_left">
+                <h2>參考來源</h2>
+                <h3>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h3>
+                <h3>參考資源: https://www.louisacoffee.co/index。</h3>
+            </div>
+            <div class="footer_right">
+                <h2>參考來源</h2>
+                <h3>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h3>
+                <h3>參考資源: https://www.starbucks.com.tw/home/index.jspx</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./5_member/js/index.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,197 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.header{
+    width: 100%;
+    background-color: #925f3b;
+    height: 110px;
+    position: fixed;
+    z-index: 3;
+}
+
+.header-wrapper{
+    max-width: 1440px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-a{
+    display: block;
+    width: 90px;
+}
+
+.logo{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.nav-ul{
+    display: flex;
+}
+
+.nav-ul li{
+    margin: 0 10px;
+}
+
+.nav li a{
+    font-size: 20px;
+}
+
+.nav-item{
+    width: 110px;
+    position: relative;
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1.8px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -0.05em;
+    transition: width .4s ease-in;
+}
+
+.nav-item:hover.nav-item::after{
+    width: 100%;
+}
+
+.fa-angle-down{
+    margin-left: 5px;
+    transition: transform .4s ease-in;
+}
+
+
+.nav a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000;
+    transition: color .4s ease-in;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav a:hover{
+    color: #e7cdbf;
+}
+
+.nav-item:hover .second_nav{
+    display: block;
+}
+
+.hamBar_wrapper{
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamBar{
+    display: block;
+    color: #e7cdbf;
+}
+
+
+@media screen and (max-width: 414px){
+
+    .header{
+        max-width: 414px;
+        width: 100%;
+        height: 65px;
+    }
+
+    .header-wrapper{
+        max-width: 414px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .logo-a{
+        width: 50px;
+    }
+
+    .logo{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .hamBar_wrapper{
+        display: block;
+        max-width: 20px;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 20px;
+    } 
+
+    
+    .nav{
+        /* display: none; */
+        display: flex;
+        opacity: 0;
+        margin: auto;
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        background-color: #e7cdbfad;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .nav_show{
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+        pointer-events: auto;
+    }
+
+    .nav-ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav li a{
+        font-size: 15px;
+    }
+
+    
+
+
+    .nav-item{
+        width: 100%;
+    }
+
+    .nav-item::after{
+        display: none;
+    }
+
+    
+
+    .nav a:hover{
+        color: white;
+    }
+
+    .top-icon a:hover{
+        color: white;
+    }
+
+}

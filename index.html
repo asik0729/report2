@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1_index/css/reset.css">
+    <link rel="stylesheet" href="./1_index/css/index.css">
+    <link rel="stylesheet" href="./1_index/css/header.css">
+    <link rel="stylesheet" href="./1_index/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <title>Haru Coffee</title>
+</head>
+<body>
+    <!---------top bar ----------->       
+    <nav class="header">
+        <div class="header-wrapper">
+            <a class="logo-a" href="index.html">
+                <img class="logo" src="./1_index/img/header_logo.png" alt="">
+            </a>
+            <div class="hamBar_wrapper"><a class="hamBar" href="#"><i class="fa-solid fa-bars"></i></a></div>
+            <section class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="index.html">首頁</a></li>
+                    <li class="nav-item"><a href="visit.html">門市查詢</a></li>
+                    <li class="nav-item"><a href="news.html">最新消息</a></li>
+                    <li class="nav-item"><a href="products.html">商品介紹</a></li>
+                    <li class="nav-item"><a href="menber.html">會員專區</a></li>
+                    <li class="nav-item"><a href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+                </ul>         
+            </section>
+        </div>
+        <div class="sideInner" id="sideInner" style="display: none;"></div>
+    </nav>
+    <!-------------- 主要內容 -------------->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <picture>
+                    <source media="( max-width: 414px )" srcset="./1_index/img/rwd1.png">
+                    <img class="home_top_img" src="./1_index/img/main.png" alt="">
+                </picture>
+            </div>
+            <div class="swiper-slide">
+                <picture>
+                    <source media="( max-width: 414px )" srcset="./1_index/img/rwd2.png">
+                    <img class="home_top_img" src="./1_index/img/main.png" alt="">
+                </picture>
+            </div>
+            <div class="swiper-slide">
+                <picture>
+                    <source media="( max-width: 414px )" srcset="./1_index/img/rwd3.png">
+                    <img class="home_top_img" src="./1_index/img/main.png" alt="">
+                </picture>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="middle">
+        <h1>最新動態</h1>
+    </div> 
+
+    <div class="content">
+        <div class="product-img"></div>
+        <div class="product_content">
+            <h2>商品介紹</h2>
+            <p>Haru為你提供許多不同的飲品，現在就小試身手，快點來試一試，客製化你的專屬飲料！讓你每一次在Haru都可以享受到不一樣的滋味</p>
+            <a href="products.html">更多選擇</a>
+        </div>
+
+        <div class="visit_content">
+            <h2>門市查詢</h2>
+            <p>我們在許多地方都有門市，不論走到哪裡，Haru都可以為顧客提供一杯咖啡，讓您享受悠閒的下午茶時光！</p>
+            <a href="visit.html">查看地址</a>
+        </div>
+        <div class="visit-img"></div>
+
+        <div class="contact-img"></div>
+        <div class="contact_content">
+            <h2>意見提供</h2>
+            <p>希望你能提供珍貴的意見給我們，加深我們之間深切的交流，如果我們能夠更多了解客戶的每一次體驗，這可以使我們在未來的日子裡不斷進步，給顧客提供更加美好的體驗。</p>
+            <a href="contact.html">聯絡我們</a>
+        </div>
+    </div>
+    <!-------------- footer --------------> 
+    <footer>
+        <div class="footer_content"> 
+            <div class="footer_logo">
+                <img src="./1_index/img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_left">
+                <h2>參考來源</h2>
+                <h3>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h3>
+                <h3>參考資源: https://www.louisacoffee.co/index。</h3>
+            </div>
+            <div class="footer_right">
+                <h2>參考來源</h2>
+                <h3>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</h3>
+                <h3>參考資源: https://www.starbucks.com.tw/home/index.jspx</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
